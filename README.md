@@ -1,16 +1,5 @@
 # calculator
 
-A new Flutter project.
+First try to implement Calculator in Dart/Flutter, it almost works :D
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Снимок экрана 2022-01-04 в 09 23 26](https://user-images.githubusercontent.com/4027138/148023599-48ea1f01-ea66-47e1-8b09-d0611c39ed12.png)
