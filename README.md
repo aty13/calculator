@@ -2,4 +2,4 @@
 
 Calculator in Dart/Flutter, functionality is updating
 
-![Simulator Screen Shot - iPhone 14 Pro - 2022-11-03 at 08 48 08](https://user-images.githubusercontent.com/4027138/199724951-d431d20c-7e58-4dec-badd-967613f42e7c.png)
+<img width="286" alt="Снимок экрана 2022-11-03 в 08 51 33" src="https://user-images.githubusercontent.com/4027138/199725170-e1a99f76-dccf-442f-9203-0683a20f5872.png">
