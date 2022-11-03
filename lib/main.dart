@@ -1,8 +1,8 @@
-import 'package:calculator/providers/result.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:provider/provider.dart';
+import 'package:flutter/material.dart';
+import 'package:calculator/widgets/calculator.dart';
 
-import './widgets/calculator.dart';
+import 'package:provider/provider.dart';
+import 'package:calculator/providers/result.dart';
 
 void main() => runApp(const CalculatorApp());
 
@@ -13,8 +13,9 @@ class CalculatorApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider.value(
       value: Result(),
-      child: CupertinoApp(
-        title: 'Flutter Demo',
+      child: const MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Calculator',
         home: Calculator(),
       ),
     );

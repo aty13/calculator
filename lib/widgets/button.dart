@@ -1,38 +1,35 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
-class CalcButton extends StatefulWidget {
-  String label;
-  VoidCallback onTap;
-  //Color color;
+class CalculatorButton extends StatelessWidget {
+  final String label;
+  final Color color;
+  final VoidCallback onTap;
 
-  CalcButton({
+  const CalculatorButton({
     Key? key,
     required this.label,
+    required this.color,
     required this.onTap,
-    //required this.color,
   }) : super(key: key);
 
   @override
-  _CalcButtonState createState() => _CalcButtonState();
-}
-
-class _CalcButtonState extends State<CalcButton> {
-  @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(5),
+      margin: const EdgeInsets.all(1),
+      padding: const EdgeInsets.all(5),
       height: 90,
       width: 90,
-      child: CupertinoButton.filled(
-        //alignment: Alignment.center,
+      decoration: BoxDecoration(color: color, borderRadius: BorderRadius.circular(50)),
+      child: TextButton(
         child: Align(
           alignment: Alignment.center,
           child: Text(
-            widget.label,
+            label,
             textAlign: TextAlign.center,
+            style: const TextStyle(color: Colors.white, fontSize: 24),
           ),
         ),
-        onPressed: widget.onTap,
+        onPressed: onTap,
       ),
     );
   }

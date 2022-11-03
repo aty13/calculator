@@ -1,10 +1,11 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import './display.dart';
-import './buttons.dart';
+import 'package:calculator/widgets/buttons.dart';
+import 'package:calculator/widgets/display.dart';
 
 class Calculator extends StatefulWidget {
+  const Calculator({Key? key}) : super(key: key);
+
   @override
   State<Calculator> createState() => _CalculatorState();
 }
@@ -12,17 +13,17 @@ class Calculator extends StatefulWidget {
 class _CalculatorState extends State<Calculator> {
   @override
   Widget build(BuildContext context) {
-    return CupertinoPageScaffold(
-      backgroundColor: CupertinoColors.white,
-      // navigationBar: const CupertinoNavigationBar(
-      //   middle: Text('Sample Code'),
-      // ),
-      child: Column(
-        children: [
-          Display(),
-          Divider(),
-          Buttons(),
-        ],
+    return Scaffold(
+      backgroundColor: Colors.black,
+      body: SafeArea(
+        child: Column(
+          children: const [
+            Spacer(),
+            Display(),
+            Divider(),
+            Buttons(),
+          ],
+        ),
       ),
     );
   }
